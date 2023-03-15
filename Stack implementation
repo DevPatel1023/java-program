@@ -1,0 +1,53 @@
+//Stack Implementation 
+
+import java.util.Scanner;
+
+abstract class Stack{
+    int top=0,max,stack[],element,remove_element;
+    abstract void push();
+    abstract void pop();
+}
+
+class Stackchild extends Stack{
+    void getdata(int top,int max,int stack[],int element,int remove_element){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter top of stack:");
+        top=sc.nextInt();
+        
+        System.out.println("Enter maximum size of stack:");
+        max=sc.nextInt();
+        
+        System.out.println("Enter new element of stack:");
+        element=sc.nextInt();
+        
+    }
+    void push(){
+        if(top=max-1){
+            System.out.println("stack overflow!!");
+        }
+        else{
+            top=top+1;//Increment the stak.
+            stack[top]=element;//push new element to the stack.
+        }
+        
+    }
+    
+    void pop(){
+        if(top==0){
+            System.out.println("stack underflow!!");
+        }
+        else{
+            top=top-1;
+            removed_element=stack[top];
+        }
+    }
+        
+    
+}
+
+class Smain_method{
+    public static void main(String args[]){
+        Stackchild [] obj = new Stackchild[];
+    }
+}

@@ -32,7 +32,7 @@ class Match extends Cricket {
     }
 }
 
-public class CricketMain {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

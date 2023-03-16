@@ -38,7 +38,7 @@ class Flat implements Property{
 		int Constructoncost=500;
 		float squrfeet_flat,TotalPricef;
 		
-		System.out.println("Enter per squrare foot area for Bunglow:");
+		System.out.println("Enter per squrare foot area for Flat:");
 		squrfeet_flat=sc.nextFloat();
 		
 		TotalPricef=squrfeet_flat*Constructoncost+AdditionalCost;
